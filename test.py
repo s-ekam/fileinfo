@@ -12,10 +12,10 @@ pret = soup.prettify()
 # z = '\n\n\n'.join(ls)
 # print(z)
 # <p><span itemprop="description">
-z = soup.find_all('p')
-st = str(z[1])
+desc = soup.find_all('p')
+str_desc = str(desc[1])
 # print(pret)
-z = soup.find_all('a')
+typ = soup.find_all('a')
 # c =0
 # for x in z:
 # 	print(c,end="  ")
@@ -23,7 +23,7 @@ z = soup.find_all('a')
 # 	c = c+1
 # print(z)
 
-st2 = str(z[10])
+str_typ = str(typ[10])
 
-print(st2[33:-4])
-print(st[32:-12])
+print(str_typ[33:-4])
+print(str_desc[32:-12])
